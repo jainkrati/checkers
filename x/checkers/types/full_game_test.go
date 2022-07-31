@@ -4,9 +4,9 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/alice/checkers/x/checkers/rules"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/stretchr/testify/require"
-	"github.com/alice/checkers/x/checkers/rules"
 )
 
 const (
@@ -25,7 +25,6 @@ func GetStoredGame1() *StoredGame {
 		Turn:    "b",
 	}
 }
-
 
 func TestCanGetAddressCreator(t *testing.T) {
 	aliceAddress, err1 := sdk.AccAddressFromBech32(alice)
